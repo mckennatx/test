@@ -9,7 +9,7 @@
 import Foundation
 import WatchKit
 
-class HRInterfaceController: ForceTouchInterfaceController {
+class HRInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -20,6 +20,7 @@ class HRInterfaceController: ForceTouchInterfaceController {
     @IBAction func didTapScreen(_ sender: Any) {
         let names = ["ControlsInterface", "StatInterface", "NowPlayingInterface"]
         WKInterfaceController.reloadRootPageControllers(withNames: names, contexts: nil, orientation: .horizontal, pageIndex: 1)
+        print("test")
     }
     
 }

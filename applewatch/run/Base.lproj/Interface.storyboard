@@ -80,6 +80,12 @@
                             </gestureRecognizers>
                         </label>
                     </items>
+                    <menu key="menu" id="JxR-Fa-iOP">
+                        <items>
+                            <menuItem title="Pause" icon="pause" id="ZZ4-mx-liH"/>
+                            <menuItem title="Cancel" icon="decline" id="8Z0-0n-4l5"/>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="532" y="-417"/>
@@ -110,6 +116,12 @@
                             </gestureRecognizers>
                         </label>
                     </items>
+                    <menu key="menu" id="hcZ-uy-cGP">
+                        <items>
+                            <menuItem title="Pause" icon="pause" id="Vib-4Q-DwB"/>
+                            <menuItem title="Cancel" icon="decline" id="Uc7-8e-RYD"/>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="804" y="-417"/>
