@@ -20,7 +20,9 @@ class HRInterfaceController: WKInterfaceController {
     @IBAction func didTapScreen(_ sender: Any) {
         let names = ["ControlsInterface", "StatInterface", "NowPlayingInterface"]
         WKInterfaceController.reloadRootPageControllers(withNames: names, contexts: nil, orientation: .horizontal, pageIndex: 1)
-        print("test")
     }
     
+    @IBAction func didPressCancel() {
+        WKInterfaceController.reloadRootControllers(withNames: ["InterfaceController"], contexts: nil)
+    }
 }

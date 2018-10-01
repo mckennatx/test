@@ -13,7 +13,7 @@ class StatInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        becomeCurrentPage()
         // Configure interface objects here.
     }
     
@@ -22,4 +22,7 @@ class StatInterfaceController: WKInterfaceController {
         WKInterfaceController.reloadRootPageControllers(withNames: names, contexts: nil, orientation: .horizontal, pageIndex: 1)
     }
     
+    @IBAction func didPressCancel() {
+        WKInterfaceController.reloadRootControllers(withNames: ["InterfaceController"], contexts: nil)
+    }
 }

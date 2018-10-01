@@ -23,7 +23,6 @@
 		A2691B85216003A100F47F7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2691B84216003A100F47F7A /* NotificationController.swift */; };
 		A2691B87216003A200F47F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2691B86216003A200F47F7A /* Assets.xcassets */; };
 		A2691B8C216003A200F47F7A /* run.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A2691B6F216003A000F47F7A /* run.app */; };
-		A2691B962160042100F47F7A /* ForceTouchInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2691B952160042100F47F7A /* ForceTouchInterfaceController.swift */; };
 		A2691B982160064300F47F7A /* ControlsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2691B972160064300F47F7A /* ControlsInterfaceController.swift */; };
 		A2691B9A2160065200F47F7A /* StatInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2691B992160065200F47F7A /* StatInterfaceController.swift */; };
 		A2691B9C2160066400F47F7A /* HRInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2691B9B2160066400F47F7A /* HRInterfaceController.swift */; };
@@ -111,7 +110,6 @@
 		A2691B86216003A200F47F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2691B88216003A200F47F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2691B89216003A200F47F7A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A2691B952160042100F47F7A /* ForceTouchInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouchInterfaceController.swift; sourceTree = "<group>"; };
 		A2691B972160064300F47F7A /* ControlsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsInterfaceController.swift; sourceTree = "<group>"; };
 		A2691B992160065200F47F7A /* StatInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatInterfaceController.swift; sourceTree = "<group>"; };
 		A2691B9B2160066400F47F7A /* HRInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRInterfaceController.swift; sourceTree = "<group>"; };
@@ -149,6 +147,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E2D5EAE2162ADDA0064AFA1 /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2691B80216003A100F47F7A /* InterfaceController.swift */,
+				A2691B972160064300F47F7A /* ControlsInterfaceController.swift */,
+				A2691B992160065200F47F7A /* StatInterfaceController.swift */,
+				A2691B9B2160066400F47F7A /* HRInterfaceController.swift */,
+			);
+			path = InterfaceControllers;
+			sourceTree = "<group>";
+		};
 		A2691B302160034700F47F7A = {
 			isa = PBXGroup;
 			children = (
@@ -218,16 +227,12 @@
 		A2691B7F216003A100F47F7A /* run Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A2691B80216003A100F47F7A /* InterfaceController.swift */,
+				9E2D5EAE2162ADDA0064AFA1 /* InterfaceControllers */,
 				A2691B82216003A100F47F7A /* ExtensionDelegate.swift */,
 				A2691B84216003A100F47F7A /* NotificationController.swift */,
 				A2691B86216003A200F47F7A /* Assets.xcassets */,
 				A2691B88216003A200F47F7A /* Info.plist */,
 				A2691B89216003A200F47F7A /* PushNotificationPayload.apns */,
-				A2691B952160042100F47F7A /* ForceTouchInterfaceController.swift */,
-				A2691B972160064300F47F7A /* ControlsInterfaceController.swift */,
-				A2691B992160065200F47F7A /* StatInterfaceController.swift */,
-				A2691B9B2160066400F47F7A /* HRInterfaceController.swift */,
 			);
 			path = "run Extension";
 			sourceTree = "<group>";
@@ -452,7 +457,6 @@
 			files = (
 				A2691B85216003A100F47F7A /* NotificationController.swift in Sources */,
 				A2691B9A2160065200F47F7A /* StatInterfaceController.swift in Sources */,
-				A2691B962160042100F47F7A /* ForceTouchInterfaceController.swift in Sources */,
 				A2691B83216003A100F47F7A /* ExtensionDelegate.swift in Sources */,
 				A2691B982160064300F47F7A /* ControlsInterfaceController.swift in Sources */,
 				A2691B81216003A100F47F7A /* InterfaceController.swift in Sources */,

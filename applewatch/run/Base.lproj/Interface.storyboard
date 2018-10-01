@@ -8,10 +8,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="run" customModuleProvider="target">
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="run" customModuleProvider="target">
                     <items>
                         <button width="1" alignment="left" title="start" id="ms2-ZB-CeH">
                             <connections>
@@ -70,7 +70,10 @@
             <objects>
                 <controller identifier="StatInterface" id="elR-fz-vCK" customClass="StatInterfaceController" customModule="run" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="stat screen 1" id="ntq-Ap-foU">
+                        <group width="1" height="1" alignment="left" id="1vf-Xg-Aaz">
+                            <items>
+                                <label alignment="left" text="stat screen 1" id="ntq-Ap-foU"/>
+                            </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="bCz-e8-qeI">
                                     <connections>
@@ -78,12 +81,16 @@
                                     </connections>
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
-                        </label>
+                        </group>
                     </items>
                     <menu key="menu" id="JxR-Fa-iOP">
                         <items>
                             <menuItem title="Pause" icon="pause" id="ZZ4-mx-liH"/>
-                            <menuItem title="Cancel" icon="decline" id="8Z0-0n-4l5"/>
+                            <menuItem title="Cancel" icon="decline" id="8Z0-0n-4l5">
+                                <connections>
+                                    <action selector="didPressCancel" destination="elR-fz-vCK" id="z7W-pc-0WY"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </controller>
@@ -106,7 +113,10 @@
             <objects>
                 <controller identifier="HRInterface" id="cvy-oB-ijL" customClass="HRInterfaceController" customModule="run" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="stat screen 2" id="KCP-jb-GwR">
+                        <group width="1" height="1" alignment="left" id="7GZ-GG-Sb2">
+                            <items>
+                                <label alignment="left" text="stat screen 2" id="KCP-jb-GwR"/>
+                            </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="nQA-sw-vru">
                                     <connections>
@@ -114,12 +124,16 @@
                                     </connections>
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
-                        </label>
+                        </group>
                     </items>
                     <menu key="menu" id="hcZ-uy-cGP">
                         <items>
                             <menuItem title="Pause" icon="pause" id="Vib-4Q-DwB"/>
-                            <menuItem title="Cancel" icon="decline" id="Uc7-8e-RYD"/>
+                            <menuItem title="Cancel" icon="decline" id="Uc7-8e-RYD">
+                                <connections>
+                                    <action selector="didPressCancel" destination="cvy-oB-ijL" id="x20-HH-29A"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </controller>
