@@ -26,11 +26,7 @@
         <!--NowPlayingInterface-->
         <scene sceneID="yqm-OE-1LJ">
             <objects>
-                <controller identifier="NowPlayingInterface" id="jQJ-Hf-h4r">
-                    <items>
-                        <nowPlayingView alignment="left" id="FI4-cs-M9s"/>
-                    </items>
-                </controller>
+                <controller identifier="NowPlayingInterface" id="jQJ-Hf-h4r"/>
             </objects>
             <point key="canvasLocation" x="532" y="-111"/>
         </scene>
